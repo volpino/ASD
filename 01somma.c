@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+    Dummy code - Only for testing
+*/
+
 FILE *filei;
 FILE *fileo;
 
@@ -13,4 +17,6 @@ int main() {
     fileo = fopen("output.txt", "w");
     fprintf(fileo, "%d\n", (n + m));
     fclose(fileo);
+
+    return 0;
 }

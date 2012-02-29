@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+   Find the maximum subarray
+   Complexity: O(n)
+*/
+
 int max_subarray(int *a, int n) {
     int i;
     int max = 0;
@@ -32,4 +37,6 @@ int main() {
     filep = fopen("output.txt", "w");
     fprintf(filep, "%d\n", max_subarray(a, n));
     fclose(filep);
+
+    return 0;
 }
