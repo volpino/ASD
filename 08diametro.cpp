@@ -8,12 +8,11 @@ vector<vector<int> > adj;
 vector<bool> visitato;
 vector<int> depth;
 
-int bfs(int partenza) {
+void bfs(int partenza) {
     queue<int> q;
 
     q.push(partenza);
     visitato[partenza] = true;
-    int parent = partenza;
 
     while (!q.empty()) {
         partenza = q.front();
