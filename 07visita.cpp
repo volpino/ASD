@@ -11,7 +11,7 @@ vector<bool> visitato;
 void visita(int partenza) {
     visitato[partenza] = true;
 
-    for(int j=0; j<adj[partenza].size(); j++) {
+    for (int j=0; j<adj[partenza].size(); j++) {
         int vicino = adj[partenza][j];
         if (DEBUG) {
             printf("Sono nel nodo %d, visito il vicino %d\n",

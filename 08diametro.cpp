@@ -8,6 +8,7 @@ vector<vector<int> > adj;
 vector<bool> visitato;
 vector<int> depth;
 
+
 void bfs(int partenza) {
     queue<int> q;
 
@@ -29,7 +30,8 @@ void bfs(int partenza) {
     }
 }
 
-int main(){
+
+int main() {
     ifstream in("input.txt");
     int N, M;
     in >> N >> M;
